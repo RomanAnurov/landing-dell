@@ -1,0 +1,13 @@
+.navigation {
+  display: flex;  
+  
+
+  max-width: 534px;
+  width: 100%;
+
+  &_type_menu {
+    justify-content: space-between;
+    margin-left: 60px;
+
+  }
+}
