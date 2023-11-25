@@ -1,16 +1,51 @@
 .button {
-    padding: 0;
-    margin: 0;
-    border: none;
-    background: none;
-    cursor: pointer;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  align-items: center;
 
+  &_type_text {
+    color: #292d32;
+    font-size: 15px;
 
-    &_type_text {
-        color: #292D32;
-        font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+  }
 
-        font-weight: 400;
-        line-height: 1;
+  &_type_best {
+    order: 3;
+  }
+
+  &_type_scroll {
+    flex-direction: column-reverse;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__text {
+    &_type_scroll {
+      writing-mode: vertical-rl;
+      transform-origin: center;
+      transform: rotate(-180deg);
+      margin-bottom: 16px;
+      color: #838383;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1;
     }
+  }
+
+  &__icon {
+    &_type_best {
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      background: #33a9ff;
+      margin-right: 12px;
+    }
+  }
 }

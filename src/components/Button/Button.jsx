@@ -10,8 +10,8 @@ function Button(props) {
       onClick={onClick}
       type="button"
     >
-      <img src={src} className="button__icon" alt={alt} />
-      <a className="button__text" href={link}>
+      <img src={src} className={`button__icon button__icon_type_${name}`} alt={alt} />
+      <a className={`button__text button__text_type_${name}`} href={link}>
         {text}
       </a>
     </button>

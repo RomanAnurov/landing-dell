@@ -7,10 +7,10 @@ import HeaderUserKabinet from "./HeaderUserKabinet/HeaderUserKabinet";
 function Header() {
   return (
     <header className="header">
-        <Logo name="big"/>
-  <HeaderNav name="menu"/> 
-  <HeaderUserKabinet />
-  </header>
+      <Logo name="big" />
+      <HeaderNav name="menu" />
+      <HeaderUserKabinet />
+    </header>
   );
 }
 

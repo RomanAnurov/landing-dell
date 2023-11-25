@@ -1,11 +1,16 @@
 import React from "react";
 import "./Main.scss";
-import Header from "../Header/Header";
+import BestSellerDell from "./BestSellerDell/BestSellerDell";
+
 
 function Main() {
 
     return (
-<Header />
+
+        <main className="content">
+            <BestSellerDell />
+
+        </main>
     )
 }
 
