@@ -26,6 +26,12 @@
     bottom: 0;
   }
 
+  &_type_strelka {
+    margin-left: 40px;
+   
+
+  }
+
   &__text {
     &_type_scroll {
       writing-mode: vertical-rl;
@@ -46,6 +52,11 @@
       height: 55px;
       background: #33a9ff;
       margin-right: 12px;
+    }
+
+    &_type_strelka {
+
+      max-width: 104px;
     }
   }
 }

@@ -4,25 +4,35 @@ import TitleGroup from "../../TitleGroup/TitleGroup";
 import Button from "../../Button/Button";
 import scrollIcon from "../../../images/scrollIcon.svg";
 import strelkaButton from "../../../images/strelkaButtonSvg.svg";
+import dellSvg from "../../../images/DellSvg.svg";
+import notebookHeader from "../../../images/notebookheader.webp";
+import strelkaHeaderLong from "../../../images/strelkaHeaderLong.svg";
 function BestSellerDell() {
   return (
     <section className="bestsellers">
       <div className="bestsellers__slider-container">
         <div className="bestsellers__slider-content">
-          <div className="bestsellers__text-back"></div>
-          <>
-            <TitleGroup
-              title="Лучшие товары от компании Dell"
-              subtitle="Новое поступление"
-              name="best"
-            >
-              <Button text="Подробнее" src={strelkaButton} name="best" />
-            </TitleGroup>
-            <Button src={scrollIcon} text="Scroll to catalog" name="scroll" />
-          </>
+          <img
+            className="bestsellers__text-back"
+            src={dellSvg}
+            alt="надпись dell"
+          />
+
+          <TitleGroup
+            title="Лучшие товары от компании Dell"
+            subtitle="Новое поступление"
+            name="best"
+          >
+            <Button text="Подробнее" src={strelkaButton} name="best" />
+          </TitleGroup>
+          <Button src={scrollIcon} text="Scroll to catalog" name="scroll" />
         </div>
       </div>
-      <div className="bestsellers__offer-container"></div>
+      <div className="bestsellers__offer-container">
+        <img className="bestsellers__image" src={notebookHeader} alt="ноутбук" />
+        <h3 className="bestsellers__image-title">Выгодное предложение от Dell</h3>
+        <Button src={strelkaHeaderLong} name="strelka" alt="кнопка стрелка" />
+        </div>
     </section>
   );
 }
