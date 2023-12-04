@@ -7,6 +7,8 @@ import strelkaButton from "../../../images/strelkaButtonSvg.svg";
 import dellSvg from "../../../images/DellSvg.svg";
 import notebookHeader from "../../../images/notebookheader.webp";
 import strelkaHeaderLong from "../../../images/strelkaHeaderLong.svg";
+import Slider from "../../Slider/Slider";
+import sliderData from "../../../data/sliderData";
 function BestSellerDell() {
   return (
     <section className="bestsellers">
@@ -26,6 +28,7 @@ function BestSellerDell() {
             <Button text="Подробнее" src={strelkaButton} name="best" />
           </TitleGroup>
           <Button src={scrollIcon} text="Scroll to catalog" name="scroll" />
+          <Slider data={sliderData}/>
         </div>
       </div>
       <div className="bestsellers__offer-container">

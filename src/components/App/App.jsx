@@ -3,6 +3,7 @@ import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import Main from "../Main/Main";
 import Header from "../Header/Header";
+import sliderData from "../../data/sliderData";
 
 function App() {
   return (
